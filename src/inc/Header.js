@@ -1,6 +1,7 @@
 import React from "react";
 import { Fragment } from "react";
 import { Outlet } from "react-router-dom";
+import Logo from "../Images/Untitled_design-removebg-preview.png";
 
 function Header() {
   return (
@@ -13,7 +14,7 @@ function Header() {
         >
           <div class="container-fluid">
             <a class="Nav-img-link" href="/">
-              <img src="Images/Untitled_design-removebg-preview.png" alt="" />
+              <img src={Logo} alt="" />
             </a>
             <button
               class="navbar-toggler"

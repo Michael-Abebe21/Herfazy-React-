@@ -1,4 +1,5 @@
 import React from "react";
+import Footer from "./inc/Footer";
 
 function Tourism() {
   return (
@@ -57,6 +58,7 @@ function Tourism() {
           </li>
         </ul>
       </article>
+      <Footer />
     </div>
   );
 }

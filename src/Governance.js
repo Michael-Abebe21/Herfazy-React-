@@ -1,4 +1,5 @@
 import React from "react";
+import Footer from "./inc/Footer";
 
 function Governance() {
   return (
@@ -70,6 +71,7 @@ function Governance() {
           </li>
         </ul>
       </article>
+      <Footer />
     </div>
   );
 }

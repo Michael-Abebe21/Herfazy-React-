@@ -1,4 +1,6 @@
 import React from "react";
+import Footer from "./inc/Footer";
+import Fantu from "./Images/Mr.fantugola.jpg";
 
 function About() {
   return (
@@ -312,7 +314,7 @@ function About() {
               <div class="col-auto d-none d-sm-block">
                 <img
                   class="bd-placeholder-img"
-                  src="./Images/Mr.fantugola.jpg"
+                  src={Fantu}
                   width="250"
                   height="250"
                   xmlns="http://www.w3.org/2000/svg"
@@ -325,6 +327,7 @@ function About() {
           </div>
         </article>
       </div>
+      <Footer />
     </div>
   );
 }

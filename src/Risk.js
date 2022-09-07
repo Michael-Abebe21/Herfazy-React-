@@ -1,4 +1,5 @@
 import React from "react";
+import Footer from "./inc/Footer";
 
 function Risk() {
   return (
@@ -55,6 +56,7 @@ function Risk() {
           benefits more people, more regions, and the state as a whole.
         </p>
       </article>
+      <Footer />
     </div>
   );
 }

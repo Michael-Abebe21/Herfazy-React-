@@ -1,4 +1,8 @@
 import React from "react";
+import Footer from "./inc/Footer";
+import Video from "./Images/Birds_home_reduced.mp4";
+import Fantu from "./Images/Mr.fantugola.jpg";
+import Slider from "./inc/Slider";
 
 function Home() {
   return (
@@ -14,19 +18,13 @@ function Home() {
         </div>
         <div class="video-container wrapper">
           <div class="gradient"></div>
-          <video
-            src="./Images/Birds_home_reduced.mp4"
-            id="video-slider"
-            loop
-            autoPlay
-            muted
-          ></video>
+          <video src={Video} id="video-slider" loop autoPlay muted></video>
         </div>
       </div>
       <div class="main" id="about">
         <div class="main__container">
           <div class="box">
-            <img src="./Images/Mr.fantugola.jpg" class="img-fluid" alt="..." />
+            <img src={Fantu} class="img-fluid" alt="..." />
 
             <div class="content">
               <h2>Ato Fantu Gola</h2>
@@ -103,50 +101,8 @@ function Home() {
           </div>
         </div>
       </div>
-      <div class="companies">
-        <h2>Companies we have worked with</h2>
-        <div
-          id="carouselExampleDark"
-          class="carousel carousel-dark slide"
-          data-bs-ride="carousel"
-        >
-          <div class="carousel-inner">
-            <div class="carousel-item" data-bs-interval="3000">
-              <img src="./Images/getfam-hotel.png" class="d-block" alt="..." />
-            </div>
-            <div class="carousel-item active" data-bs-interval="3000">
-              <img src="./Images/abaybank.png" class="d-block" alt="..." />
-            </div>
-            <div class="carousel-item" data-bs-interval="3000">
-              <img src="./Images/zefmesh.png" class="d-block" alt="..." />
-            </div>
-            <div class="carousel-item" data-bs-interval="3000">
-              <img src="./Images/Taye.png" class="d-block" alt="..." />
-            </div>
-            <div class="carousel-item" data-bs-interval="3000">
-              <img src="./Images/ambassador.png" class="d-block" alt="..." />
-            </div>
-          </div>
-          <button
-            class="carousel-control-prev"
-            type="button"
-            data-bs-target="#carouselExampleDark"
-            data-bs-slide="prev"
-          >
-            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Previous</span>
-          </button>
-          <button
-            class="carousel-control-next"
-            type="button"
-            data-bs-target="#carouselExampleDark"
-            data-bs-slide="next"
-          >
-            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Next</span>
-          </button>
-        </div>
-      </div>
+
+      <Slider />
 
       <div class="background">
         <div class="contact-container " id="contact-container">
@@ -207,6 +163,7 @@ function Home() {
           </form>
         </div>
       </div>
+      <Footer />
     </div>
   );
 }

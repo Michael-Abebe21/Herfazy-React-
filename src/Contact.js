@@ -1,4 +1,5 @@
 import React from "react";
+import Footer from "./inc/Footer";
 
 function Contact() {
   return (
@@ -113,6 +114,7 @@ function Contact() {
           </div>
         </div>
       </div>
+      <Footer />
     </div>
   );
 }

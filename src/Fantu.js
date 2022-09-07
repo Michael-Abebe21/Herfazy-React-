@@ -1,4 +1,6 @@
 import React from "react";
+import Footer from "./inc/Footer";
+import Profile from "./Images/Mr.fantugola.jpg";
 
 function Fantu() {
   return (
@@ -7,7 +9,7 @@ function Fantu() {
         <div class="col-lg-4">
           <img
             class="bd-placeholder-img rounded-circle"
-            src="./Images/Mr.fantugola.jpg"
+            src={Profile}
             width="150"
             height="150"
             xmlns="http://www.w3.org/2000/svg"
@@ -235,6 +237,7 @@ function Fantu() {
           Hotels Corporations.
         </dd>
       </article>
+      <Footer />
     </div>
   );
 }
