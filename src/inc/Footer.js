@@ -7,10 +7,10 @@ function Footer() {
       <footer class="row row-cols-1 row-cols-sm-2 row-cols-md-5 py-5  border-top">
         <div class="col mb-3 footer-alignment">
           <a
-            href="/home"
+            href="/"
             class="d-flex align-items-center mb-3 link-dark text-decoration-none footer-img-link"
           >
-            <img src={Logo} />
+            <img src={Logo} alt="" />
           </a>
         </div>
 
@@ -40,7 +40,7 @@ function Footer() {
               </a>
             </li>
             <li>
-              <a href="">P.O.Box 1519</a>
+              <small>P.O.Box 1519</small>
             </li>
           </ul>
         </div>
@@ -49,24 +49,24 @@ function Footer() {
           <h5>Socials</h5>
           <ul class="nav flex-column">
             <li>
-              <a href="#">
+              <small>
                 <i class="fa fa-facebook"></i>
-              </a>
+              </small>
             </li>
             <li>
-              <a href="#">
+              <small>
                 <i class="fa fa-twitter"></i>
-              </a>
+              </small>
             </li>
             <li>
-              <a href="#">
+              <small>
                 <i class="fa fa-google-plus"></i>
-              </a>
+              </small>
             </li>
             <li>
-              <a href="#">
+              <small>
                 <i class="fa fa-linkedin-square"></i>
-              </a>
+              </small>
             </li>
           </ul>
         </div>

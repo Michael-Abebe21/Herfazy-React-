@@ -987,4 +987,8 @@ article {
 
 }
 
+/* Form validation */
 
+.check {
+    color: green;
+}

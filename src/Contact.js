@@ -1,5 +1,6 @@
 import React from "react";
 import Footer from "./inc/Footer";
+import Form from "./inc/Form";
 
 function Contact() {
   return (
@@ -9,61 +10,7 @@ function Contact() {
           <div class="row">
             <h1 class="contact-heading">Contact Us</h1>
             <div class="contact-container col-md-6" id="contact-container">
-              <form
-                action="https://formsubmit.co/fantu.golasiyoom@gmail.com"
-                method="POST"
-              >
-                <div class="input-group">
-                  <label>Full Name</label>
-                  <input
-                    type="text"
-                    placeholder="Enter your name"
-                    name="firstName"
-                    id="contact-name"
-                    onkeyup="validateName()"
-                  />
-                  <span id="name-error"></span>
-                </div>
-
-                <div class="input-group">
-                  <label>Phone No.</label>
-                  <input
-                    type="tel"
-                    placeholder="09 -- -- -- --"
-                    name="phone"
-                    id="contact-phone"
-                    onkeyup="validatePhone()"
-                  />
-                  <span id="phone-error"></span>
-                </div>
-
-                <div class="input-group">
-                  <label>Email Id</label>
-                  <input
-                    type="email"
-                    placeholder="Enter Email"
-                    name="email"
-                    id="contact-email"
-                    onkeyup="validateEmail()"
-                  />
-                  <span id="email-error"></span>
-                </div>
-
-                <div class="input-group">
-                  <label>Your Message</label>
-                  <textarea
-                    rows="5"
-                    placeholder="Enter your message"
-                    name="message"
-                    id="contact-message"
-                    onkeyup="validateMessage()"
-                  ></textarea>
-                  <span id="message-error"></span>
-                </div>
-
-                <button onclick="return validateForm()">Submit</button>
-                <span id="submit-error"></span>
-              </form>
+              <Form />
             </div>
             <div class="col">
               <ul class="list-group mb-3">

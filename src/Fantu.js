@@ -13,12 +13,10 @@ function Fantu() {
             width="150"
             height="150"
             xmlns="http://www.w3.org/2000/svg"
-            role="img"
             aria-label="Placeholder: 140x140"
             preserveAspectRatio="xMidYMid slice"
             focusable="false"
-          ></img>
-
+          />
           <h2 class="fw-normal">Fantu Gola Siyoum</h2>
           <p>
             Founder and Managing Director of Herfazy Consult
