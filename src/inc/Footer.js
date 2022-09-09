@@ -1,17 +1,18 @@
 import React from "react";
 import Logo from "../Images/Untitled_design-removebg-preview.png";
+import { Link } from "react-router-dom";
 
 function Footer() {
   return (
     <div>
       <footer class="row row-cols-1 row-cols-sm-2 row-cols-md-5 py-5  border-top">
         <div class="col mb-3 footer-alignment">
-          <a
-            href="/"
+          <Link
+            to="/"
             class="d-flex align-items-center mb-3 link-dark text-decoration-none footer-img-link"
           >
             <img src={Logo} alt="" />
-          </a>
+          </Link>
         </div>
 
         <div class="col mb-3"></div>

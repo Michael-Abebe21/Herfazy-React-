@@ -1,6 +1,7 @@
 import React from "react";
 import Footer from "./inc/Footer";
 import Fantu from "./Images/Mr.fantugola.jpg";
+import { Link } from "react-router-dom";
 
 function About() {
   return (
@@ -307,9 +308,13 @@ function About() {
                   and now works as a consultant and property manager of his own
                   resort that resides in the state of Gondar.
                 </p>
-                <a href="/fantu" class="stretched-link">
+                <Link
+                  to="/fantu"
+                  onClick={() => window.reload()}
+                  class="stretched-link"
+                >
                   About Fantu Gola
-                </a>
+                </Link>
               </div>
               <div class="col-auto d-none d-sm-block">
                 <img

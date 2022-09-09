@@ -1,6 +1,7 @@
 import React from "react";
 import { Fragment } from "react";
 import { Outlet } from "react-router-dom";
+import { Link } from "react-router-dom";
 import Logo from "../Images/Untitled_design-removebg-preview.png";
 
 function Header() {
@@ -13,9 +14,9 @@ function Header() {
           aria-label="Offcanvas navbar large"
         >
           <div class="container-fluid">
-            <a class="Nav-img-link" href="/">
+            <Link class="Nav-img-link" to="/">
               <img src={Logo} alt="" />
-            </a>
+            </Link>
             <button
               class="navbar-toggler"
               type="button"
@@ -45,14 +46,23 @@ function Header() {
               <div class="offcanvas-body">
                 <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
                   <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="/">
+                    <Link
+                      class="nav-link active"
+                      aria-current="page"
+                      to="/"
+                      onClick={() => window.reload()}
+                    >
                       Home
-                    </a>
+                    </Link>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link" href="/about">
+                    <Link
+                      class="nav-link"
+                      to="/about"
+                      onClick={() => window.reload()}
+                    >
                       About
-                    </a>
+                    </Link>
                   </li>
                   <li class="nav-item dropdown">
                     <a
@@ -70,19 +80,31 @@ function Header() {
                       aria-labelledby="offcanvasNavbarLgDropdown"
                     >
                       <li>
-                        <a class="dropdown-item" href="/Tourism">
+                        <Link
+                          class="dropdown-item"
+                          to="/Tourism"
+                          onClick={() => window.reload()}
+                        >
                           Tourism and hospitality
-                        </a>
+                        </Link>
                       </li>
                       <li>
-                        <a class="dropdown-item" href="/Governance">
+                        <Link
+                          class="dropdown-item"
+                          to="/Governance"
+                          onClick={() => window.reload()}
+                        >
                           Governance and public administration
-                        </a>
+                        </Link>
                       </li>
                       <li>
-                        <a class="dropdown-item" href="/Risk">
+                        <Link
+                          class="dropdown-item"
+                          to="/Risk"
+                          onClick={() => window.reload()}
+                        >
                           Risk Management
-                        </a>
+                        </Link>
                       </li>
                     </ul>
                   </li>
@@ -92,9 +114,13 @@ function Header() {
                     </a>
                   </li>
                   <li class="nav-item">
-                    <a href="/contact" class="nav-href nav-link">
+                    <Link
+                      to="/contact"
+                      onClick={() => window.reload()}
+                      class="nav-href nav-link"
+                    >
                       <button class="button nav-button-link">Contact</button>
-                    </a>
+                    </Link>
                   </li>
                 </ul>
               </div>

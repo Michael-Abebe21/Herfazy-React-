@@ -4,6 +4,7 @@ import Video from "./Images/Birds_home_reduced.mp4";
 import Fantu from "./Images/Mr.fantugola.jpg";
 import Slider from "./inc/Slider";
 import Form from "./inc/Form";
+import { Link } from "react-router-dom";
 
 function Home() {
   return (
@@ -54,7 +55,9 @@ function Home() {
               06, Haile Gebreselassie Street, housed in Getahun Beshah Building.
             </p>
             <button class="main__btn">
-              <a href="/about">About Us</a>
+              <Link to="/about" onClick={() => window.reload()}>
+                About Us
+              </Link>
             </button>
           </div>
         </div>
@@ -71,9 +74,9 @@ function Home() {
               largest Government Hotel chain.
             </p>
             <div class="services__btn">
-              <a href="/Tourism">
+              <Link to="/Tourism" onClick={() => window.reload()}>
                 <button>Know more</button>
-              </a>
+              </Link>
             </div>
           </div>
           <div class="services__card2">
@@ -83,9 +86,9 @@ function Home() {
               transparent services to the best satisfaction of customers.{" "}
             </p>
             <div class="services__btn">
-              <a href="/Governance">
+              <Link to="/Governance" onClick={() => window.reload()}>
                 <button>Know more</button>
-              </a>
+              </Link>
             </div>
           </div>
           <div class="services__card3">
@@ -95,9 +98,9 @@ function Home() {
               organization's capital, earnings and business success.{" "}
             </p>
             <div class="services__btn">
-              <a href="/Risk">
+              <Link to="/Risk" onClick={() => window.reload()}>
                 <button>Know more</button>
-              </a>
+              </Link>
             </div>
           </div>
         </div>
