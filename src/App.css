@@ -719,6 +719,11 @@ form button{
     color: red;
 }
 
+.Form-header {
+    color: white;
+    text-align: center;
+    padding-bottom: 3%;
+}
 
 /* Footer section */
 

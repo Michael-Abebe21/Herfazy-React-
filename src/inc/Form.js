@@ -3,7 +3,6 @@ import CheckIcon from "@mui/icons-material/Check";
 
 function Form() {
   const [fullName, setFullName] = useState("");
-  const [phone, setPhone] = useState("");
   const [email, setEmail] = useState("");
   const [message, setMessage] = useState("");
 
@@ -13,19 +12,6 @@ function Form() {
     }
     if (!fullName.match(/^[A-Za-z]*\s{1}[A-Za-z]*$/)) {
       return "Write full name";
-    }
-    return <CheckIcon className="check" />;
-  }
-
-  function DisplayPhone() {
-    if (phone.length === 0) {
-      return "";
-    }
-    if (phone.length !== 10) {
-      return "Phone no should be 10 digits";
-    }
-    if (!phone.match(/^[0-9]{10}$/)) {
-      return "Only digits please";
     }
     return <CheckIcon className="check" />;
   }
@@ -65,19 +51,6 @@ function Form() {
     return true;
   }
 
-  function validatePhone() {
-    if (phone.length === 0) {
-      return false;
-    }
-    if (phone.length !== 10) {
-      return false;
-    }
-    if (!phone.match(/^[0-9]{10}$/)) {
-      return "Only digits please";
-    }
-    return true;
-  }
-
   function validateEmail() {
     if (email.length === 0) {
       return false;
@@ -105,12 +78,7 @@ function Form() {
   }
 
   const handleSubmit = (event) => {
-    if (
-      !validateName() ||
-      !validatePhone() ||
-      !validateEmail() ||
-      !validateMessage()
-    ) {
+    if (!validateName() || !validateEmail() || !validateMessage()) {
       event.preventDefault();
       alert("Fill all the inputs");
     } else {
@@ -124,7 +92,6 @@ function Form() {
       onSubmit={handleSubmit}
     >
       <div class="input-group">
-        <label>Full Name</label>
         <input
           type="text"
           placeholder="Enter your name"
@@ -136,19 +103,6 @@ function Form() {
       </div>
 
       <div class="input-group">
-        <label>Phone No.</label>
-        <input
-          type="tel"
-          placeholder="09 -- -- -- --"
-          name="phone"
-          id="contact-phone"
-          onChange={(e) => setPhone(e.target.value)}
-        />
-        <span id="phone-error">{DisplayPhone()}</span>
-      </div>
-
-      <div class="input-group">
-        <label>Email Id</label>
         <input
           type="email"
           placeholder="Enter Email"
@@ -160,7 +114,6 @@ function Form() {
       </div>
 
       <div class="input-group">
-        <label>Your Message</label>
         <textarea
           rows="5"
           placeholder="Enter your message"

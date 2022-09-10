@@ -14,7 +14,11 @@ function Header() {
           aria-label="Offcanvas navbar large"
         >
           <div class="container-fluid">
-            <Link class="Nav-img-link" to="/">
+            <Link
+              class="Nav-img-link"
+              to="/"
+              onClick={() => window.scrollTo(0, 0)}
+            >
               <img src={Logo} alt="" />
             </Link>
             <button

@@ -10,6 +10,7 @@ function Footer() {
           <Link
             to="/"
             class="d-flex align-items-center mb-3 link-dark text-decoration-none footer-img-link"
+            onClick={() => window.scrollTo(0, 0)}
           >
             <img src={Logo} alt="" />
           </Link>

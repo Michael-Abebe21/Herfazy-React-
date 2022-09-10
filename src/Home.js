@@ -109,6 +109,7 @@ function Home() {
       <Slider />
 
       <div class="background">
+        <h1 className="Form-header">Contact Us</h1>
         <div class="contact-container " id="contact-container">
           <Form />
         </div>
