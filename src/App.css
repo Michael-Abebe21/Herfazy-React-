@@ -1,6 +1,4 @@
 
-
-
 * {
     box-sizing: border-box;
     margin: 0;
@@ -82,6 +80,14 @@ background: linear-gradient(to right, #1CB5E0, #000046); /* W3C, IE 10+/ Edge, F
 
 
 /* Hero Section */ 
+
+#home {
+    position: fixed; 
+    top: 0; 
+    width: 100%; 
+}
+
+
 .home{
     min-height: 100vh;
     display: flex;
@@ -155,7 +161,17 @@ background: linear-gradient(to right, #1CB5E0, #000046); /* W3C, IE 10+/ Edge, F
         font-size: 25px;
     }
 }
+
+/* The rest of the page */
+
+.rest-page {
+    position: relative;
+    margin-top: 950px;
+}
+
+
 /* About Section */ 
+
 .main {
     background: #000046;  /* fallback for old browsers */
     background: -webkit-linear-gradient(to right, #1CB5E0, #000046);  /* Chrome 10-25, Safari 5.1-6 */
@@ -299,7 +315,6 @@ background: linear-gradient(to right, #1CB5E0, #000046); /* W3C, IE 10+/ Edge, F
 .img-fluid {
     height: 100%;
 }
-/* mobile response */ 
 
 @media screen and (max-width: 1097px) {
     .main__container {

@@ -79,8 +79,8 @@ function Form() {
 
   const handleSubmit = (event) => {
     if (!validateName() || !validateEmail() || !validateMessage()) {
+      alert("Please fill all the inputs");
       event.preventDefault();
-      alert("Fill all the inputs");
     } else {
     }
   };
