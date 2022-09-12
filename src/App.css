@@ -110,21 +110,68 @@ background: linear-gradient(to right, #1CB5E0, #000046); /* W3C, IE 10+/ Edge, F
     min-height: 600px;
     object-fit: cover;
   }
+
+  @keyframes slideInFromBottom {
+    0% {
+      transform: translateY(100%);
+    }
+    100% {
+      transform: translateY(0);
+    }
+  }
+  
   
 
 .hero__heading {
     font-size: 70px;
     margin-bottom: 24px;
     color: #fff;
-
+    animation: 1s ease-out 0s 1 slideInFromBottom;
 }
 
-.hero__description {
-    font-size: 30px;
-    padding-left: 7.5%;
-    padding-right: 7.5%;
+.home__btn {
+    font-size: 1.8rem;
+    background: #000046;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #1CB5E0, #000046);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #1CB5E0, #000046); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+    padding: 20px 60px;
+    border: none;
+    border-radius: 4px;
+    margin-top: 2rem;
+    cursor: pointer;
+    position: relative;
+    transition: all 0.35s;
+    outline: none;
+    animation: 1s ease-out 0s 1 slideInFromBottom;
+}
+
+.home__btn a {
+    position: relative;
+    z-index: 2;
+    color: #fff;
+    text-decoration: none;
+}
+
+.home__btn:after {
+    position: absolute;
+    content: '';
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    background: #185A9D;
+    transition: all 0.35s;
+    border-radius: 4px;
+}
+.home__btn:hover {
     color: #fff;
 }
+
+.home__btn:hover:after {
+    width: 100%;
+}
+
 
 .highlight {
     border-bottom: 4px solid #185A9D;

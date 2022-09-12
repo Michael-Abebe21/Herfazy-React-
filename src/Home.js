@@ -14,7 +14,7 @@ function Home() {
           <h1 class="hero__heading">
             Tourism, Hotel and Trade Consulting Company in Ethiopia
           </h1>
-          <button class="main__btn">
+          <button class="home__btn">
             <a href="tel:+251911203937">Call now</a>
           </button>
         </div>
